@@ -14,7 +14,9 @@
     "lib"
   ],
   "scripts": {
-    "build": "node build"
+    "build": "node build && cp -r lib/ public/lib/",
+    "dev": "serve public",
+    "vercel-build": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/juliangarnier/anime/issues"
@@ -33,6 +35,7 @@
     "pretty-bytes": "^4.0.2",
     "rollup": "^0.53.2",
     "rollup-plugin-buble": "^0.18.0",
+    "serve": "^14.2.1",
     "uglify-js": "^3.3.4"
   }
 }
